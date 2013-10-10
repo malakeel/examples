@@ -3,12 +3,11 @@
 	xmlns:jpa="http://aries.apache.org/xmlns/jpa/v1.0.0" default-activation="eager">
 
 	<bean id="helloServices" class="org.examples.hello.HelloServiceImpl">
-		<tx:transaction method="*" value="Required" />
-		<jpa:context property="entityManager" unitname="myUnit" />
+		<!-- <tx:transaction method="*" value="Required" /> -->
+		<jpa:unit property="entityManager" unitname="myUnit" />
 	</bean>
 
 	<service ref="helloServices" interface="org.examples.hello.HelloService" />
-
 
 
 </blueprint>

@@ -4,7 +4,7 @@ import javax.persistence.EntityManager;
 
 public class HelloServiceImpl implements HelloService {
 
-	private EntityManager em;
+	private EntityManager entityManager;
 
 	public void sayHello() {
 		System.out.println("Say Hello from the service");
@@ -13,7 +13,7 @@ public class HelloServiceImpl implements HelloService {
 
 	public void setEntityManager(EntityManager e) {
 		System.out.println("Setting entity manager" + e.toString());
-		em = e;
+		this.entityManager = e;
 	}
 
 }

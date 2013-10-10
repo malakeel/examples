@@ -11,7 +11,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven-bundle-plugin.version>2.3.7</maven-bundle-plugin.version>
 		<osgi.version>4.3.1</osgi.version>
-		<openjpa.version>2.2.2</openjpa.version>
+		<openjpa.version>2.2.0</openjpa.version>
 	</properties>
 
 	<dependencies>
@@ -26,7 +26,7 @@
 			<groupId>org.apache.openjpa</groupId>
 			<artifactId>openjpa</artifactId>
 			<version>${openjpa.version}</version>
-			<scope>provided</scope>
+			<!-- <scope>provided</scope> -->
 		</dependency>
 
 		<dependency>
@@ -48,6 +48,69 @@
 			<artifactId>derby</artifactId>
 			<version>10.10.1.1</version>
 		</dependency>
+
+<!-- 		<dependency> -->
+<!-- 			<groupId>org.apache.aries.jpa</groupId> -->
+<!-- 			<artifactId>org.apache.aries.jpa.container.context</artifactId> -->
+<!-- 			<version>1.0.0</version> -->
+<!-- 			<type>bundle</type> -->
+<!-- 		</dependency> -->
+
+<!-- 		<dependency> -->
+<!-- 			<groupId>org.apache.aries.jpa</groupId> -->
+<!-- 			<artifactId>org.apache.aries.jpa.blueprint.aries</artifactId> -->
+<!-- 			<version>1.0.0</version> -->
+<!-- 			<type>bundle</type> -->
+<!-- 		</dependency> -->
+
+<!-- 		<dependency> -->
+<!-- 			<groupId>org.apache.aries.jpa</groupId> -->
+<!-- 			<artifactId>org.apache.aries.jpa.api</artifactId> -->
+<!-- 			<version>1.0.0</version> -->
+<!-- 		</dependency> -->
+
+<!-- 		<dependency> -->
+<!-- 			<groupId>asm</groupId> -->
+<!-- 			<artifactId>asm-all</artifactId> -->
+<!-- 			<version>3.2</version> -->
+<!-- 		</dependency> -->
+
+<!-- 		<dependency> -->
+<!-- 			<groupId>org.apache.aries.jpa</groupId> -->
+<!-- 			<artifactId>org.apache.aries.jpa.container</artifactId> -->
+<!-- 			<version>1.0.0</version> -->
+
+<!-- 		</dependency> -->
+
+<!-- 		<dependency> -->
+<!-- 			<groupId>org.apache.aries.jpa</groupId> -->
+<!-- 			<artifactId>org.apache.aries.jpa.blueprint.aries</artifactId> -->
+<!-- 			<version>1.0.0</version> -->
+<!-- 		</dependency> -->
+
+<!-- 		<dependency> -->
+<!-- 			<groupId>org.apache.aries.jpa</groupId> -->
+<!-- 			<artifactId>org.apache.aries.jpa.container.context</artifactId> -->
+<!-- 			<version>1.0.0</version> -->
+<!-- 		</dependency> -->
+
+<!-- 		<dependency> -->
+<!-- 			<groupId>org.apache.aries.transaction</groupId> -->
+<!-- 			<artifactId>org.apache.aries.transaction.manager</artifactId> -->
+<!-- 			<version>1.0.0</version> -->
+<!-- 		</dependency> -->
+
+<!-- 		<dependency> -->
+<!-- 			<groupId>org.apache.aries.transaction</groupId> -->
+<!-- 			<artifactId>org.apache.aries.transaction.blueprint</artifactId> -->
+<!-- 			<version>1.0.0</version> -->
+<!-- 		</dependency> -->
+
+<!-- 		<dependency> -->
+<!-- 			<groupId>org.apache.aries.transaction</groupId> -->
+<!-- 			<artifactId>org.apache.aries.transaction.wrappers</artifactId> -->
+<!-- 			<version>1.0.0</version> -->
+<!-- 		</dependency> -->
 
 	</dependencies>
 
@@ -81,7 +144,6 @@
 							!org.postgresql.* ,
 							!org.apache.commons.dbcp ,
 							!org.apache.derby.shared.common.sanity ,
-							org.apache.openjpa.persistence ,
 							*
 						</Import-Package>
 
